@@ -11,7 +11,7 @@ from retico_core import AbstractModule, IncrementalUnit, UpdateMessage, UpdateTy
 from retico_core.text import TextIU
 from retico_core.audio import AudioIU
 
-from utils import Gemini
+from .utils import Gemini
 
 class GeminiModule(AbstractModule):
     

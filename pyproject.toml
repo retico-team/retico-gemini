@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=80", "setuptools-scm[simple]>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retico-gemini"
+dynamic = ["version"]
+dependencies = [
+    "retico-core>=2.0.0",
+    "google-genai",
+    "python-dotenv",
+    "numpy",
+    "webrtcvad-wheels",
+]
+requires-python = ">=3.9, <4"
+authors = [
+    {name = "Émile Alexandre", email = "emile.alexandre9@etu.univ-lorraine.fr"},
+]
+description = "A Retico module that communicates with the Gemini API over text and audio input."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = [
+    "retico",
+    "framework",
+    "incremental",
+    "dialogue",
+    "dialog",
+    "llm",
+    "gemini",
+    "google",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[project.urls]
+Repository = "https://github.com/retico-team/retico-gemini"
+
+[tool.setuptools_scm]
+version_file = "retico_gemini/version.py"
